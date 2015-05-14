@@ -1,0 +1,590 @@
+/*
+custom-style
+
+*/
+
+body
+{
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.tm-white a {
+	color: #fff;
+}
+/* start h1 group */
+h1 { 
+    margin-top: 0;
+    margin-bottom: 25px; 
+}
+h1,
+h2,
+h3,
+h4
+{
+    font-weight: bold;
+}
+/* end h1 group */
+p { line-height: 1.6em; }
+/* img */
+img
+{
+    max-width: 100%;
+    height: auto;
+}
+/* img */
+
+/* overlay */
+.overlay 
+{
+   width: 100%;
+   height: 500px;
+   background: rgba(0, 0, 0, 0.4);
+   padding-top: 100px;
+   padding-bottom: 90px;
+}  
+/* overlay */
+/* overlay1 */
+.overlay1 
+{
+   width: 100%;
+   height: 500px;
+   background: rgba(0, 0, 0, 0.4);
+   padding-top: 70px;
+   padding-bottom: 100px;
+}  
+/* overlay1 */
+/* overlay2 */
+.overlay2 
+{
+   width: 100%;
+   height: 100%;
+   background: rgba(0, 0, 0, 0.4);
+   padding-top: 100px;
+   padding-bottom: 90px;
+}  
+/* overlay2 */
+
+/* start page container */
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+}
+}
+@media (min-width: 992px) {
+  .container {
+    width: 900px;
+}
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1000px;
+}
+}
+/* end page container */
+
+/* start preloader */
+.preloader
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    /*justify-content: center;*/
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: none repeat scroll 0 0 #fff;
+}
+.sk-spinner-rotating-plane.sk-spinner 
+{
+ width: 30px;
+ height: 30px;
+ background-color: #28a7e9;
+ margin: 0 auto;
+ -webkit-animation: sk-rotatePlane 1s infinite ease-in-out;
+ animation: sk-rotatePlane 1s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotatePlane {
+  0% {
+     -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+     transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+
+     50% {
+        -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+        transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+
+        100% {
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+
+            @keyframes sk-rotatePlane {
+              0% {
+                 -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+                 transform: perspective(120px) rotateX(0deg) rotateY(0deg); }
+
+                 50% {
+                    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+                    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg); }
+
+                    100% {
+                        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+                        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg); } }
+                        /* end preloader */
+
+                        /* start navigation */
+                        .navbar-default
+                        {
+                            background: #fff;
+                            border: none;
+                            box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.08);
+                            margin: 0!important;
+                        }
+                        .navbar-default .navbar-brand
+                        {
+                            color: #28a7e9;
+                            font-size: 30px;
+                            font-weight: bold;
+                            height: 70px;
+                            line-height: 35px;
+
+                        }
+                        .navbar-default .navbar-brand a:visited
+                        {
+                            color: #28a7e9;
+                        }
+                        .navbar-default .nav li a
+                        {
+                            color: #666;
+                            font-size: 13px;
+                            font-weight: bold;
+                            height: 70px;
+                            line-height: 40px;
+                        }
+                        .navbar-default .nav li a:hover,
+                        .navbar-default .nav li a:focus,
+                        .navbar-default .nav li a.current
+                        {
+                            color: #28a7e9;
+                        }
+                        .navbar-default .navbar-toggle
+                        {
+                            border: none;
+                            padding-top: 20px;
+                        }
+                        .navbar-default .navbar-toggle .icon-bar
+                        {
+                            background: #28a7e9;
+                            border-color: transparent;
+                        }
+                        .navbar-default .navbar-toggle:hover,
+                        .navbar-default .navbar-toggle:focus { background-color: transparent }
+                        /* end navigation */
+
+                        /* start home */       
+                        #home
+                        {
+                            background: url('../images/earth.png') no-repeat;
+                            background-size: cover;
+                            color: #fff;
+                            margin-top: 70px;
+                            text-align: center;
+                            width: 100%;
+                        }
+
+                        #home h1
+                        {
+                            padding-top: 5px;
+                            padding-bottom: 10px;
+                            word-spacing: 10px;
+                        }
+                        #home h3
+                        {
+                            padding-top: 15px;
+                            padding-bottom: 5px;
+                        }
+                        #home p
+                        {
+                            font-weight: 400;
+                            font-style: italic;
+                            line-height: 2em;
+                        }
+                        #home img
+                        {
+                            display: inline-block;
+                            margin-top: 30px;
+                        }
+                        #home .pos p
+                        {
+                            text-align: left;
+                            text-indent: 2em;
+                        }
+                        #home .gl
+                        {
+                            color: #28a7e9;
+                            font-size: 30px;
+
+                        }
+                        #home .glsm
+                        {
+                            color: #28a7e9;
+                            font-size: 20px;
+
+                        }
+                        #home .btn {
+                          background: transparent;
+                          border: transparent  
+                      }   
+
+                      /* end home */
+
+                      /* start calling */
+                      #calling .introduction
+                      {
+                        padding-top: 56px;
+                        padding-bottom: 57px;
+                        background: #f8f8f8;
+                    }
+                    #calling .information
+                    {
+                        text-align: center;
+                        background: #f8f8f8;
+                        padding-bottom: 20px;
+                    }
+                    #calling .information-form
+                    {
+                        padding-bottom: 40px;
+                    }
+                    #calling p
+                    {
+                        padding-bottom: 20px;
+                    }
+                    #calling .form-control
+                    {
+                        border: none;
+                        border-radius: 0px;
+                        box-shadow: none;
+                        margin-bottom: 20px;
+                    }
+                    #calling input
+                    {
+                        height: 50px;
+                    }
+                    #calling input[type="submit"]
+                    {
+                        background: #28a7e9;
+                        color: #fff;
+                        font-weight: bold;
+                    }
+                    #calling input[type="submit"]:hover {
+                        background: #107DB6;
+                    }
+                    #calling .btn {
+                        background: transparent;
+                        border: transparent; 
+                    }   
+                    #calling .gl {
+                        color: #28a7e9;
+                        opacity: 0.5;
+                    }
+                    #calling .pre
+                    {
+                        text-align: left;
+                    }
+
+                    /* end calling */
+
+                    /* start philosophy */
+                    #philosophy
+                    {
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #philosophy p
+                    {
+                        padding-top: 10px;
+                    }
+                    #philosophy span
+                    {
+                        float: left;
+                    }
+                    #philosophy .gl
+                    {
+                        background: #28a7e9;
+                        border-radius: 50%;
+                        color: #fff;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        margin-right: 20px;
+                    }
+                    /* end philosophy */
+
+                    /* start work */
+                    #work
+                    {
+                        background: #f8f8f8;
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #work p
+                    {
+                        padding-top: 10px;
+                    }
+                    #work span
+                    {
+                        float: left;
+                    }
+                    #work .gl
+                    {
+
+                        color: #28a7e9;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 25px;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                    /* end work */
+
+                    /* start learning */
+                    #learning
+                    {
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #learning h2
+                    {
+                        padding-bottom: 20px;
+                    }
+                    #learning img
+                    {
+                        width:400px;
+                        height:400px
+                    }
+                    #learning .btn
+                    {
+                        border-radius: 0px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        padding: 10px 40px 10px 40px;
+                    }
+                    /* end learning */
+
+                    /* start archives */
+                    #archives
+                    {
+                        background: #f8f8f8;
+                        text-align: center;
+                        padding-top: 50px;
+                        padding-bottom: 50px;
+                    }
+                    #archives h2
+                    {
+                        padding-bottom: 10px;
+                    }
+                    #archives .archives
+                    {
+                        background: #fff;
+                    }
+                    #archives .active
+                    {
+                        position: relative;
+                        bottom: 20px;
+                    }
+                    #archives .archives .archives-title
+                    {
+                        background: #28a7e9;
+                        color: #fff;
+                        font-weight: bold;
+                        padding: 30px;
+                    }
+                    #archives .archives .archives-title p
+                    {
+                        font-size: 20px;
+                    }
+                    #archives .archives ul
+                    {
+                        padding: 0;
+                        margin: 0;
+                    }
+                    #archives .archives ul li
+                    {
+                        display: list-item;
+                        text-align:left;
+                        list-style: none;
+                        padding: 16px;
+                    }
+                    #archives .btn
+                    {
+                        background: transparent;
+                        border: 1px solid #28a7e9;
+                        border-radius: 0px;
+                        color: #28a7e9;
+                        font-weight: bold;
+                        padding-right: 40px;
+                        padding-left: 40px;
+                        margin-top: 20px;
+                        margin-bottom: 30px;
+                    }
+                    #archives .btn:hover {
+                        background: #28a7e9;
+                        color: #fff;
+                    }
+                    /* end archives */
+
+                    /* start story */
+                    #story
+                    {
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #story h2
+                    {
+                        padding-bottom: 20px;
+                    }
+                    #story img
+                    {
+                        width:400px;
+                        height:400px
+                    }
+                    #story .btn
+                    {
+                        border-radius: 0px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        padding: 10px 40px 10px 40px;
+                    }
+                    /* end story */
+
+                    /* start template */
+                    #template
+                    {
+                        background: #f8f8f8;
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #template h2
+                    {
+                        padding-bottom: 20px;
+                    }
+                    #template .btn
+                    {
+                        border-radius: 0px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        padding: 10px 40px 10px 40px;
+                    }
+                    #template .gl
+                    {
+                        color: #28a7e9;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 25px;
+                        text-align: center;
+                        margin-right: 10px;
+                    }
+                    #template img
+                    {
+                        width: 400px;
+                        height: 400px;
+                    }
+                    /* end template */
+
+                    /* start byst */
+                    #byst
+                    {
+                        padding-top: 80px;
+                        padding-bottom: 80px;
+                    }
+                    #byst h2
+                    {
+                        padding-bottom: 20px;
+                    }
+                    #byst .btn
+                    {
+                        border-radius: 0px;
+                        font-weight: bold;
+                        margin-top: 20px;
+                        padding: 10px 40px 10px 40px;
+                    }
+                    #byst .gl
+                    {
+                        background: #28a7e9;
+                        border-radius: 50%;
+                        color: #fff;
+                        display: inline-block;
+                        width: 40px;
+                        height: 40px;
+                        line-height: 40px;
+                        text-align: center;
+                        margin-right: 20px;
+                    }
+                    /* end byst */
+
+                    /* start footer */
+                    footer
+                    {
+                        background: #fff;
+                        font-weight: 400;
+                        text-align: center;
+                        padding: 20px;
+                    }
+                    /* end footer */
+
+                    @media screen and ( max-width: 991px ) {
+                        .templatemo-box {
+                            margin-bottom: 30px;
+                        }
+                        #archives .active {
+                            bottom: 0;
+                        }
+                        .archives {
+                            margin-bottom: 20px;
+                        }
+                        #work img, #learning img {
+                            margin-top: 30px;
+                        }
+                        #work1 img {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    @media screen and ( max-width: 767px ) {
+                        .navbar-default .nav li a {
+                            height: auto;
+                            line-height: 2em;
+                        }
+                        #work, #archives, #learning {
+                            padding-top: 20px;
+                            padding-bottom: 40px;
+                        }
+                        #contact .overlay {
+                            padding-top: 40px;
+                        }
+                    }
+                    /* start media 360 */
+                    @media screen and ( max-width: 360px ){
+                        .archives
+                        {
+                            padding-bottom: 40px;
+                        }
+                    }
+/* end media 360 */
